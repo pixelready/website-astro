@@ -1,48 +1,102 @@
 ---
-import Wrapper from '../layouts/Wrapper.astro';
+import Wrapper from "../layouts/Wrapper.astro";
 ---
 
 <Wrapper>
-	<main class="flex flex-col justify-items-center max-w-4xl p-8 tracking-tight">
-		<section class="flex flex-col justify-items-center mb-10">
-			<img class="mx-auto my-10" src="pixel_owen_animated_front_180x288.gif" height="90" width="144">
-			<h1 class=" text-slate-800 text-6xl mb-5"> Hi there, I'm <span class="font-bold">Owen Waring</span></h1>
-			<p class="text-slate-500 leading-normal tracking-tight text-2xl mb-3">
-				A full stack engineer with deep Product Management and UX Design experience. I love balancing implentation details against user needs and business goals. Bring me onto your projects and watch me mind meld with your design and process folks to build amazing solutions together.
+	<main
+		class="flex flex-col justify-items-center max-w-4xl p-8 tracking-tight"
+	>
+		<section class="flex flex-col justify-items-center mb-6 md:mb-10">
+			<img
+				class="mx-auto my-10 w-1/5"
+				src="pixel_owen_animated_front_180x288.gif"
+			/>
+			<h1 class="text-slate-800 text-6xl mb-5">
+				Hi there, I'm <span class="font-bold">Owen Waring</span>
+			</h1>
+			<p
+				class="text-slate-500 leading-normal tracking-tight text-2xl mb-3"
+			>
+				A full stack engineer with deep Product Management and UX Design
+				experience. I love balancing implentation details against user
+				needs and business goals. Bring me onto your projects and watch
+				me mind meld with your design and process folks to build amazing
+				solutions together.
 			</p>
 		</section>
-		<section class="flex flex-row">
-			<div class="flex-1 rounded-b-lg shadow-lg bg-white mr-6 rounded-lg">
-				<h2 class="font-bold text-teal-500 bg-teal-100 text-2xl p-6 rounded-t-lg tracking-wide">CURRENT WORK STACK</h2>
+		<section class="flex md:flex-row flex-col">
+			<div class="flex-1 rounded-b-lg shadow-lg bg-white md:mr-6 md:mb-0 mb-6 mr-0 rounded-lg">
+				<h2
+					class="font-bold text-teal-500 bg-teal-100 text-2xl p-6 rounded-t-lg tracking-wide"
+				>
+					CURRENT WORK STACK
+				</h2>
 				<p class="text-slate-700 text-xl leading-tight mb-2">
 					<ul class="flex flex-col flex-1 p-4">
 						<li>
-							<a class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row" href="http://reactjs.org">
-								<img class="w-8" src="/tech_logos/react.svg" alt="">
+							<a
+								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
+								href="http://reactjs.org"
+							>
+								<img
+									class="w-8"
+									src="/tech_logos/react.svg"
+									alt=""
+								/>
 								<span class="text-lg p-3">React</span>
 							</a>
 						</li>
 						<li>
-							<a class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row" href="https://redux.js.org/">
-								<img class="w-8" src="/tech_logos/redux.svg" alt="">
+							<a
+								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
+								href="https://redux.js.org/"
+							>
+								<img
+									class="w-8"
+									src="/tech_logos/redux.svg"
+									alt=""
+								/>
 								<span class="text-lg p-3">Redux</span>
 							</a>
 						</li>
 						<li>
-							<a class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row" href="https://styled-components.com/">
-								<img class="w-8" src="/tech_logos/styled_components.svg" alt="">
-								<span class="text-lg p-3">Styled Components</span>
+							<a
+								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
+								href="https://styled-components.com/"
+							>
+								<img
+									class="w-8"
+									src="/tech_logos/styled_components.svg"
+									alt=""
+								/>
+								<span class="text-lg p-3"
+									>Styled Components</span
+								>
 							</a>
 						</li>
 						<li>
-							<a class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row" href="https://koajs.com/">
-								<img class="w-8" src="/tech_logos/koa.svg" alt="">
+							<a
+								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
+								href="https://koajs.com/"
+							>
+								<img
+									class="w-8"
+									src="/tech_logos/koa.svg"
+									alt=""
+								/>
 								<span class="text-lg p-3">Koa</span>
 							</a>
 						</li>
 						<li>
-							<a class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row" href="https://azure.microsoft.com/en-us/products/azure-sql/database/">
-								<img class="w-8" src="/tech_logos/azure.svg" alt="">
+							<a
+								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
+								href="https://azure.microsoft.com/en-us/products/azure-sql/database/"
+							>
+								<img
+									class="w-8"
+									src="/tech_logos/azure.svg"
+									alt=""
+								/>
 								<span class="text-lg p-3">Azure SQL</span>
 							</a>
 						</li>
@@ -50,36 +104,75 @@ import Wrapper from '../layouts/Wrapper.astro';
 				</p>
 			</div>
 			<div class="flex-1 rounded-b-lg shadow-lg bg-white rounded-lg">
-				<h2 class="font-bold text-purple-500 bg-purple-200 text-2xl p-6 rounded-t-lg tracking-wide">CURRENT PLAY STACK</h2>
+				<h2
+					class="font-bold text-purple-500 bg-purple-200 text-2xl p-6 rounded-t-lg tracking-wide"
+				>
+					CURRENT PLAY STACK
+				</h2>
 				<p class="text-slate-700 text-xl leading-tight mb-2">
 					<ul class="flex flex-col flex-1 p-4">
 						<li>
-							<a class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row" href="https://www.solidjs.com/">
-								<img class="w-8" src="/tech_logos/solidjs.svg" alt="">
+							<a
+								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
+								href="https://www.solidjs.com/"
+							>
+								<img
+									class="w-8"
+									src="/tech_logos/solidjs.svg"
+									alt=""
+								/>
 								<span class="text-lg p-3">SolidJS</span>
 							</a>
 						</li>
 						<li>
-							<a class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row" href="https://astro.build/">
-								<img class="w-8" src="/tech_logos/astro.svg" alt="">
+							<a
+								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
+								href="https://astro.build/"
+							>
+								<img
+									class="w-8"
+									src="/tech_logos/astro.svg"
+									alt=""
+								/>
 								<span class="text-lg p-3">Astro</span>
 							</a>
 						</li>
 						<li>
-							<a class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row" href="https://tailwindcss.com/">
-								<img class="w-8" src="/tech_logos/tailwindcss.svg" alt="">
+							<a
+								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
+								href="https://tailwindcss.com/"
+							>
+								<img
+									class="w-8"
+									src="/tech_logos/tailwindcss.svg"
+									alt=""
+								/>
 								<span class="text-lg p-3">Tailwind</span>
 							</a>
 						</li>
 						<li>
-							<a class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row" href="https://trpc.io/">
-								<img class="w-8" src="/tech_logos/trpc.svg" alt="">
+							<a
+								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
+								href="https://trpc.io/"
+							>
+								<img
+									class="w-8"
+									src="/tech_logos/trpc.svg"
+									alt=""
+								/>
 								<span class="text-lg p-3">tRPC</span>
 							</a>
 						</li>
 						<li>
-							<a class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row" href="https://www.postgresql.org/">
-								<img class="w-8" src="/tech_logos/postgresql.svg" alt="">
+							<a
+								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
+								href="https://www.postgresql.org/"
+							>
+								<img
+									class="w-8"
+									src="/tech_logos/postgresql.svg"
+									alt=""
+								/>
 								<span class="text-lg p-3">PostgreSQL</span>
 							</a>
 						</li>
@@ -88,26 +181,53 @@ import Wrapper from '../layouts/Wrapper.astro';
 			</div>
 		</section>
 		<h2 class="text-xl text-slate-500 mt-8 mb-4">Contact Me</h2>
-		<section class="flex flex-row">
-			<a class="text-slate-500 hover:text-slate-50 hover:bg-slate-500  flex flex-1 flex-row border border-slate-300 p-6 rounded-lg mr-6" href="https://linkedin.com/in/owenwaring">
+		<section class="flex md:flex-row flex-col">
+			<a
+				class="text-slate-500 hover:text-slate-50 hover:bg-slate-500 flex flex-1 flex-row border border-slate-300 p-6 rounded-lg md:mr-6 md:mb-0 mr-0 mb-6"
+				href="https://linkedin.com/in/owenwaring"
+			>
 				<div class="h-12 mr-6">
-					<svg width="100%" height="100%" viewBox="0 0 601 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+					<svg
+						width="100%"
+						height="100%"
+						viewBox="0 0 601 600"
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						xml:space="preserve"
+						style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+					>
 						<g transform="matrix(1,0,0,1,-2,-0.00419617)">
 							<g transform="matrix(4.16667,0,0,4.16667,2,0)">
-								<path d="M122.732,122.728L101.084,122.728L101.084,85.165C101.084,74.083 96.372,70.665 90.295,70.665C83.872,70.665 77.574,75.499 77.574,85.442L77.574,122.728L55.925,122.728L55.925,53.955L76.744,53.955L76.744,63.484L77.021,63.484C79.116,59.25 86.428,52.022 97.598,52.022C109.678,52.022 122.732,59.187 122.732,80.194L122.732,122.728ZM32.095,44.373C25.202,44.373 19.614,39.126 19.614,31.946C19.614,24.767 25.202,19.514 32.095,19.514C38.989,19.514 44.577,24.767 44.577,31.946C44.577,39.126 38.989,44.373 32.095,44.373ZM42.92,122.676L21.271,122.676L21.271,53.902L42.92,53.902L42.92,122.676ZM133.374,0.001L10.63,0.001C4.759,0.001 0,4.76 0,10.631L0,133.37C0,139.241 4.759,144 10.63,144L133.374,144C139.245,144 144.004,139.241 144.004,133.37L144.004,10.631C144.004,4.76 139.245,0.001 133.374,0.001Z" style="fill-rule:nonzero;" fill="currentColor"/>
+								<path
+									d="M122.732,122.728L101.084,122.728L101.084,85.165C101.084,74.083 96.372,70.665 90.295,70.665C83.872,70.665 77.574,75.499 77.574,85.442L77.574,122.728L55.925,122.728L55.925,53.955L76.744,53.955L76.744,63.484L77.021,63.484C79.116,59.25 86.428,52.022 97.598,52.022C109.678,52.022 122.732,59.187 122.732,80.194L122.732,122.728ZM32.095,44.373C25.202,44.373 19.614,39.126 19.614,31.946C19.614,24.767 25.202,19.514 32.095,19.514C38.989,19.514 44.577,24.767 44.577,31.946C44.577,39.126 38.989,44.373 32.095,44.373ZM42.92,122.676L21.271,122.676L21.271,53.902L42.92,53.902L42.92,122.676ZM133.374,0.001L10.63,0.001C4.759,0.001 0,4.76 0,10.631L0,133.37C0,139.241 4.759,144 10.63,144L133.374,144C139.245,144 144.004,139.241 144.004,133.37L144.004,10.631C144.004,4.76 139.245,0.001 133.374,0.001Z"
+									style="fill-rule:nonzero;"
+									fill="currentColor"></path>
 							</g>
 						</g>
 					</svg>
 				</div>
 				<div class="">Networking and Employment Inquiries</div>
 			</a>
-			<a class="text-slate-500 hover:text-slate-50 hover:bg-slate-500 flex flex-1 flex-row border border-slate-300 p-6 rounded-lg" href="https://github.com/pixelready">
+			<a
+				class="text-slate-500 hover:text-slate-50 hover:bg-slate-500 flex flex-1 flex-row border border-slate-300 p-6 rounded-lg"
+				href="https://github.com/pixelready"
+			>
 				<div class="h-12 mr-6">
-					<svg width="100%" height="100%" viewBox="0 0 98 98" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="currentColor"/></svg>
+					<svg
+						width="100%"
+						height="100%"
+						viewBox="0 0 98 98"
+						xmlns="http://www.w3.org/2000/svg"
+						><path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+							fill="currentColor"></path>
+					</svg>
 				</div>
 				<div>Open Source and Project Collaboration</div>
 			</a>
 		</section>
 	</main>
 </Wrapper>
-	
