@@ -1,5 +1,60 @@
 ---
 import Wrapper from "../layouts/Wrapper.astro";
+import CardRounded from "../components/CardRounded.astro";
+const workTechLinks = [
+    {
+        techLogo: 'react.svg',
+        techName: 'React',
+        techUrl: 'reactjs.org'
+    },
+    {
+        techLogo: 'redux.svg',
+        techName: 'Redux',
+        techUrl: 'redux.js.org'
+    },
+    {
+        techLogo: 'styled_components.svg',
+        techName: 'Styled Components',
+        techUrl: 'styled-components.com/'
+    },
+    {
+        techLogo: 'koa.svg',
+        techName: 'Koa',
+        techUrl: 'koajs.com/'
+    },
+    {
+        techLogo: 'azure.svg',
+        techName: 'Azure SQL',
+        techUrl: 'azure.microsoft.com/en-us/products/azure-sql/database/'
+    },
+];
+const playTechLinks = [
+    {
+        techLogo: 'solidjs.svg',
+        techName: 'SolidJS',
+        techUrl: 'www.solidjs.com'
+    },
+    {
+        techLogo: 'astro.svg',
+        techName: 'Astro',
+        techUrl: 'astro.build'
+    },
+    {
+        techLogo: 'tailwindcss.svg',
+        techName: 'Tailwind',
+        techUrl: 'tailwindcss.com'
+    },
+    {
+        techLogo: 'trpc.svg',
+        techName: 'tRPC',
+        techUrl: 'trpc.io'
+    },
+    {
+        techLogo: 'postgresql.svg',
+        techName: 'PostgreSQL',
+        techUrl: 'www.postgresql.org'
+    },
+];
 ---
 
 <Wrapper>
@@ -18,175 +73,23 @@ import Wrapper from "../layouts/Wrapper.astro";
 				class="text-slate-500 leading-normal tracking-tight text-2xl mb-3"
 			>
 				A full stack engineer with deep Product Management and UX Design
-				experience. I love balancing implentation details against user
+				experience. I love balancing implementation details against user
 				needs and business goals. Bring me onto your projects and watch
 				me mind meld with your design and process folks to build amazing
-				solutions together.
+				solutions.
 			</p>
 		</section>
 		<section class="flex md:flex-row flex-col">
-			<div class="flex-1 rounded-b-lg shadow-lg bg-white md:mr-6 md:mb-0 mb-6 mr-0 rounded-lg">
-				<h2
-					class="font-bold text-teal-500 bg-teal-100 text-2xl p-6 rounded-t-lg tracking-wide"
-				>
-					CURRENT WORK STACK
-				</h2>
-				<p class="text-slate-700 text-xl leading-tight mb-2">
-					<ul class="flex flex-col flex-1 p-4">
-						<li>
-							<a
-								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
-								href="http://reactjs.org"
-							>
-								<img
-									class="w-8"
-									src="/tech_logos/react.svg"
-									alt=""
-								/>
-								<span class="text-lg p-3">React</span>
-							</a>
-						</li>
-						<li>
-							<a
-								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
-								href="https://redux.js.org/"
-							>
-								<img
-									class="w-8"
-									src="/tech_logos/redux.svg"
-									alt=""
-								/>
-								<span class="text-lg p-3">Redux</span>
-							</a>
-						</li>
-						<li>
-							<a
-								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
-								href="https://styled-components.com/"
-							>
-								<img
-									class="w-8"
-									src="/tech_logos/styled_components.svg"
-									alt=""
-								/>
-								<span class="text-lg p-3"
-									>Styled Components</span
-								>
-							</a>
-						</li>
-						<li>
-							<a
-								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
-								href="https://koajs.com/"
-							>
-								<img
-									class="w-8"
-									src="/tech_logos/koa.svg"
-									alt=""
-								/>
-								<span class="text-lg p-3">Koa</span>
-							</a>
-						</li>
-						<li>
-							<a
-								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
-								href="https://azure.microsoft.com/en-us/products/azure-sql/database/"
-							>
-								<img
-									class="w-8"
-									src="/tech_logos/azure.svg"
-									alt=""
-								/>
-								<span class="text-lg p-3">Azure SQL</span>
-							</a>
-						</li>
-					</ul>
-				</p>
-			</div>
-			<div class="flex-1 rounded-b-lg shadow-lg bg-white rounded-lg">
-				<h2
-					class="font-bold text-purple-500 bg-purple-200 text-2xl p-6 rounded-t-lg tracking-wide"
-				>
-					CURRENT PLAY STACK
-				</h2>
-				<p class="text-slate-700 text-xl leading-tight mb-2">
-					<ul class="flex flex-col flex-1 p-4">
-						<li>
-							<a
-								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
-								href="https://www.solidjs.com/"
-							>
-								<img
-									class="w-8"
-									src="/tech_logos/solidjs.svg"
-									alt=""
-								/>
-								<span class="text-lg p-3">SolidJS</span>
-							</a>
-						</li>
-						<li>
-							<a
-								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
-								href="https://astro.build/"
-							>
-								<img
-									class="w-8"
-									src="/tech_logos/astro.svg"
-									alt=""
-								/>
-								<span class="text-lg p-3">Astro</span>
-							</a>
-						</li>
-						<li>
-							<a
-								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
-								href="https://tailwindcss.com/"
-							>
-								<img
-									class="w-8"
-									src="/tech_logos/tailwindcss.svg"
-									alt=""
-								/>
-								<span class="text-lg p-3">Tailwind</span>
-							</a>
-						</li>
-						<li>
-							<a
-								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
-								href="https://trpc.io/"
-							>
-								<img
-									class="w-8"
-									src="/tech_logos/trpc.svg"
-									alt=""
-								/>
-								<span class="text-lg p-3">tRPC</span>
-							</a>
-						</li>
-						<li>
-							<a
-								class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
-								href="https://www.postgresql.org/"
-							>
-								<img
-									class="w-8"
-									src="/tech_logos/postgresql.svg"
-									alt=""
-								/>
-								<span class="text-lg p-3">PostgreSQL</span>
-							</a>
-						</li>
-					</ul>
-				</p>
-			</div>
+			<CardRounded title="Current Work Stack" color="purple" techLinks={workTechLinks} />
+			<CardRounded title="Current Play Stack" color="teal" techLinks={playTechLinks} />
 		</section>
 		<h2 class="text-xl text-slate-500 mt-8 mb-4">Contact Me</h2>
 		<section class="flex md:flex-row flex-col">
 			<a
-				class="text-slate-500 hover:text-slate-50 hover:bg-slate-500 flex flex-1 flex-row border border-slate-300 p-6 rounded-lg md:mr-6 md:mb-0 mr-0 mb-6"
+				class="text-slate-500 hover:text-slate-50 hover:bg-slate-500 flex flex-1 flex-row border border-slate-300 hover:border-slate-500 p-6 rounded-lg md:mr-6 md:mb-0 mr-0 mb-6"
 				href="https://linkedin.com/in/owenwaring"
 			>
-				<div class="h-12 mr-6">
+				<div class="h-12 w-12 mr-6">
 					<svg
 						width="100%"
 						height="100%"
@@ -210,10 +113,10 @@ import Wrapper from "../layouts/Wrapper.astro";
 				<div class="">Networking and Employment Inquiries</div>
 			</a>
 			<a
-				class="text-slate-500 hover:text-slate-50 hover:bg-slate-500 flex flex-1 flex-row border border-slate-300 p-6 rounded-lg"
+				class="text-slate-500 hover:text-slate-50 hover:bg-slate-500 flex flex-1 flex-row border border-slate-300 hover:border-slate-500 p-6 rounded-lg"
 				href="https://github.com/pixelready"
 			>
-				<div class="h-12 mr-6">
+				<div class="h-12 w-12 mr-6">
 					<svg
 						width="100%"
 						height="100%"
@@ -229,5 +132,6 @@ import Wrapper from "../layouts/Wrapper.astro";
 				<div>Open Source and Project Collaboration</div>
 			</a>
 		</section>
+		<div class="bg-purple-100 bg-teal-100 text-purple-500 text-teal-500"></div>
 	</main>
 </Wrapper>

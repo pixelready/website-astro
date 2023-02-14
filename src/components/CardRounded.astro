@@ -1,0 +1,34 @@
+---
+const { color, techLinks, title } = Astro.props;
+const tailwindColors = {
+    purple: "text-purple-500 bg-purple-100",
+    teal: "text-teal-500 bg-teal-100"
+    }
+---
+
+<div class="flex-1 rounded-b-lg shadow-md bg-white md:mr-6 md:mb-0 mb-6 mr-0 md:last:mr-0 rounded-lg">
+    <h2
+        class={`font-bold ${tailwindColors[color]} text-2xl p-6 rounded-t-lg tracking-wide uppercase`}
+    >
+        {title}
+    </h2>
+    <p class="text-slate-700 text-xl leading-tight mb-2">
+        <ul class="flex flex-col flex-1 p-4">
+            {techLinks.map(({ techLogo, techName, techUrl }) =>
+                (<li>
+                    <a
+                        class="text-slate-600 hover:font-bold pl-3 inline-flex flex-row"
+                        href={`https://${techUrl}`}
+                    >
+                        <img
+                            class="w-8"
+                            src={`tech_logos/${techLogo}`}
+                            alt=""
+                        />
+                        <span class="text-lg p-3">{techName}</span>
+                    </a>
+                </li>)
+            )}
+        </ul>
+    </p>
+</div>
